@@ -1,6 +1,7 @@
 package com.example.primerapp2025.views
 
 import android.annotation.SuppressLint
+import android.util.Log
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -14,6 +15,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import com.example.primerapp2025.components.ActionButton
+import com.example.primerapp2025.components.MainButton
+import com.example.primerapp2025.components.Spacers
 import com.example.primerapp2025.components.TitleView
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
@@ -48,5 +51,9 @@ private fun ContentView() {
     )
     {
         TitleView("Home")
+        Spacers()
+        MainButton("Generico",Color.Red,Color.White){
+            Log.d("soy un boton generico","hola")
+        }
     }
 }
