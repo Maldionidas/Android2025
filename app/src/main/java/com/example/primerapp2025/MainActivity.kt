@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.primerapp2025.navigation.NavManager
 import com.example.primerapp2025.views.HomeView
 
 class MainActivity : ComponentActivity() {
@@ -21,5 +22,5 @@ class MainActivity : ComponentActivity() {
 @Preview
 @Composable
 fun GreetingPreview(){
-    HomeView()
+    NavManager()
 }
